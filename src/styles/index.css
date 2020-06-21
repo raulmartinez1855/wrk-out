@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'ArchivoBlack Regular';
+  src: local('ArchivoBlack Regular'),
+    url('./fonts/ArchivoBlack-Regular.ttf') format('truetype');
+}
+
+html,
+body {
+  --dark-blue: #2b3252;
+  --light-blue: #61dafb;
+  --placeholder-text: #2b325254;
+  --red: #ef5455;
+  --white: #fff;
+  --yellow: #fad744;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+  background-color: var(--dark-blue);
+  color: var(--yellow);
+  font-family: 'ArchivoBlack Regular', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
