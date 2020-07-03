@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ExerciseSelection from './ExerciseSelection';
+import Workout from './Workout';
 import styled from 'styled-components';
 
 const AppContainer = styled.div`
@@ -36,6 +37,14 @@ function App() {
         <ExerciseSelection
           setStage={setStage}
           stages={stages}
+          setExercises={setExercises}
+        />
+      )}
+      {stage === stages.workout && (
+        <Workout
+          setStage={setStage}
+          stages={stages}
+          exercises={exercises}
           setExercises={setExercises}
         />
       )}
